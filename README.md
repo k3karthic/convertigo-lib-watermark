@@ -16,8 +16,8 @@ A library for [Convertigo](https://convertigo.com/) that adds a watermark for th
 `Step 1:` In your Convertigo Studio use `File->Import->Convertigo->Convertigo Project` and hit the `Next` button.
 
 `Step 2:` In the Dialog `Project remote URL` field, use either of the following URLs,
-* lib_Watermark=https://github.com/k3karthic/convertigo-lib-watermark 
-* lib_Watermark=https://codeberg.org/k3karthic/convertigo-lib-watermark
+* lib_Watermark=https://github.com/k3karthic/convertigo-lib-watermark.git
+* lib_Watermark=https://codeberg.org/k3karthic/convertigo-lib-watermark.git
 
 `Step 3:` Click the `Finish` button.
 
