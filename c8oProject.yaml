@@ -1,5 +1,5 @@
 ↑convertigo: 8.0.0.m006
-↓convertigo_lib_watermark [core.Project]: 
+↓lib_Watermark [core.Project]: 
   comment: Mashup Sequencer project
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
   ↓watermarkDocument [sequences.GenericSequence]: 🗏 sequences/watermarkDocument.yaml

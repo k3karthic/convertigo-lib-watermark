@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
  
   <groupId>com.github.k3karthic</groupId>
-  <artifactId>convertigo_lib_watermark</artifactId>
+  <artifactId>lib_Watermark</artifactId>
   <version>1.0</version>
  
   <properties>
