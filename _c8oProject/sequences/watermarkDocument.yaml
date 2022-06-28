@@ -1,22 +1,9 @@
 ↓Sequence_JS [steps.SimpleStep-1656121020301]: 
   expression: |
-    'const base64 = java.util.Base64;
-    const imageIO = javax.imageio.ImageIO;
+    include("js/utils.js");
     
-    const base64ToStream = function(b64) {
-    	const imageBytes = base64.getDecoder().decode(b64);
-    	const imageStream = new java.io.ByteArrayInputStream(imageBytes);
-    	
-    	const readers = imageIO.getImageReaders(imageIO.createImageInputStream(imageStream));
-    	if (!readers.hasNext()) {
-    		throw new Error(''Unsupported image format'');
-    	}
-    	const reader = readers.next();
-    	
-    	imageStream.reset();
-    	
-    	return [reader.getFormatName(), imageStream];	
-    };
+    const base64 = java.util.Base64;
+    const imageIO = javax.imageio.ImageIO;
     
     const [watermarkFormat, watermarkStream] = base64ToStream(watermarkImage);
     
@@ -26,7 +13,7 @@
     	)
     );
     
-    const washoutBool = washout.toLowerCase().trim() === ''true'';
+    const washoutBool = washout.toLowerCase().trim() === 'true';
     const watermark = new Packages.com.spire.doc.PictureWatermark(
     	watermarkStream, washoutBool
     );
@@ -39,7 +26,7 @@
     
     const resultBase64 = base64.getEncoder().encodeToString(resultStream.toByteArray());
     
-    result.close();'
+    result.close();
 ↓jElement [steps.ElementStep-1656121020304]: 
   expression: resultBase64
   nodeName: resultBase64
